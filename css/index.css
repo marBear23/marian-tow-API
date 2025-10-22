@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+  background-image: url("../img/clouds.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+/*media query for body element to display max-width on different device types.*/
+
+@media (max-width: 600px) {
+  body {
+    margin: 8px;
+  }
+}
+main {
+  max-width: 1000px;
+  padding: 32px;
+  margin: 0 auto;
+  background-color: #35323f;
+}
+.weather-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+#cityInput {
+  padding: 8px;
+  margin-right: 10px;
+}
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#weatherResult {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+#dailyForecast {
+  list-style: none;
+  padding: 0;
+}
+
+#dailyForecast li {
+  margin-bottom: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

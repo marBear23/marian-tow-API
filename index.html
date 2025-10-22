@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Open API Project</title>
+    <title>Open API Weather Forecast Project</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Open API Project</h1>
-      <!--<p id="message">Click the button below.</p>
-      <button id="myButton">Click Me</button>-->
+    <div class="weather-container">
+      <h1>Open API Weather Project</h1>
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="getWeatherBtn">Find Forecast</button>
+      <div id="weatherResult">
+        <h2>Current Weather:</h2>
+        <p id="currentTemp"></p>
+        <p id="currentCondition"></p>
+        <h2>Daily Forecast:</h2>
+        <ul id="dailyForecast"></ul>
+      </div>
+      <p id="errorMessage" class="error"></p>
     </div>
-
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
